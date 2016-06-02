@@ -6,7 +6,6 @@
   "type": "project",
   "require": {
     "php": ">=5.5.9",
-    "luyunhua/croute": "dev-master",
     "luyunhua/framework": "dev-master"
   },
   "autoload":{
@@ -18,10 +17,6 @@
     "packagist": {
       "type": "composer",
       "url": "https://packagist.phpcomposer.com"
-    },
-    "croute": {
-      "type": "vcs",
-      "url": "git@github.com:luyunhua/croute.git"
     },
     "framework": {
       "type": "vcs",
