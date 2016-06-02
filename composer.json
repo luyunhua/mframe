@@ -6,7 +6,8 @@
   "type": "project",
   "require": {
     "php": ">=5.5.9",
-    "luyunhua/croute": "dev-master"
+    "luyunhua/croute": "dev-master",
+    "luyunhua/framework": "dev-master"
   },
   "autoload":{
     "psr-4": {
@@ -21,6 +22,10 @@
     "croute": {
       "type": "vcs",
       "url": "git@github.com:luyunhua/croute.git"
+    },
+    "framework": {
+      "type": "vcs",
+      "url": "git@github.com:luyunhua/framework.git"
     }
   }
 }

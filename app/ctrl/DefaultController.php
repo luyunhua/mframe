@@ -11,7 +11,14 @@ class DefaultController
 {
     public function index()
     {
-        echo 'hello tomato';
+        $refArray = ['a','b','c'];
+        echo 'hello tiny';
+    }
+
+    public function index2()
+    {
+        print_r($_GET);
+        print_r($_POST);
     }
 
 }

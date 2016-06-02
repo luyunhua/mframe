@@ -7,18 +7,10 @@
  */
 include __DIR__ . '/boots/autoload.php';
 
-use Tomato\Route\Route;
+$fileRoute = new \Tomato\Route\FileRoute();
+$fileRoute->get('/myroute/abc/\d+' ,'App\Ctrl\DefaultController@index');
+$fileRoute->post('/myroute/post/\w+/d' ,'App\Ctrl\DefaultController@index2');
 
-
-
-$route = new Route();
-//$route->addRoute('get','/myroute/[number]',function(){
-//    //echo '1';
-//});
-//$route->addRoute('get','/user/[string]',function(){
-//    //echo '2';
-//});
-$route->addRoute('get','/myroute/abc', 'App\Ctrl\DefaultController@index');
-
-$dispatcher = new \Tomato\Route\Dispatcher($route);
+$dispatcher = new \Tomato\Route\Dispatcher($fileRoute);
 $dispatcher->run();
+
